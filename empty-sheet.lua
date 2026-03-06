@@ -1,38 +1,39 @@
 masteryPos = {
-  --[] [icon] to a different figure each turn, except during a long rest
-  [1] = {x=-0.6783161200161638, y=0.11, z=0.6848950393501609},
-  --[] Prevent your allies from suffering attack damage in a single scenario
-  [2] = {x=-0.6783161200161638, y=0.11, z=0.8174334699640442},
+  --[] Place or destroy a [icon] every round
+  [1] = {x=-0.6783017030913254, y=0.11, z=0.6849209886338603},
+  --[] Attack at least three enemies with each of three different area of effect attack abilities.
+  [2] = {x=-0.6783017030913254, y=0.11, z=0.7946306886634631},
 }
 perkPos = {
-  --[][] Replace one [-1] card with one "[shield] 1" -rolling card
-  [1] = {x=0.16311138403004619, y=0.11, z=-0.6251004855208444},
-  [2] = {x=0.20779543238672712, y=0.11, z=-0.6251004855208444},
-  --[][] Replace one [+0] card with one [+1] "If you [icon] with this attack, add [+2]" card
-  [3] = {x=0.16311138403004619, y=0.11, z=-0.49646800578529526},
-  [4] = {x=0.20779543238672712, y=0.11, z=-0.49646800578529526},
-  --[][] Replace one [+1] card with one [+1] "[retaliate] 1, [range] 3" card
-  [5] = {x=0.16311138403004619, y=0.11, z=-0.31620634678904924},
-  [6] = {x=0.20779543238672712, y=0.11, z=-0.31620634678904924},
-  --[][][] Add two "[heal] 1, [target] [icon2]" cards
-  [7] = {x=0.16311138403004619, y=0.11, z=-0.18757384016615944},
-  [8] = {x=0.20779543238672712, y=0.11, z=-0.18757384016615944},
-  [9] = {x=0.25247926014867317, y=0.11, z=-0.18757384016615944},
-  --[][] Add one "muddle, if the target is muddle, disarm instead" -rolling card
-  [10] = {x=0.16311138403004619, y=0.11, z=-0.1105705665786483},
-  [11] = {x=0.20779543238672712, y=0.11, z=-0.1105705665786483},
-  --[] Add one "The target treats you as if you had invisible this round" card
-  [12] = {x=0.16311138403004619, y=0.11, z=0.018061913156900727},
-  --[] Ignore scenario effects
-  [13] = {x=0.16311138403004619, y=0.11, z=0.14581334851069935},
-  --[] Once each scenario, during your turn, replace one active [persistent] [loss] card with a different [persistent] [loss] card from your hand
-  [14] = {x=0.16311138403004619, y=0.11, z=0.2219355777164602},
-  --[|] You and your summons may [icon] onto the same figure, and your summons may [icon] onto you
-  [15] = {x=0.16311138403004619, y=0.11, z=0.45206438098458435},
-  [16] = {x=0.16311138403004619, y=0.11, z=0.4807402460921535},
-  --[|] Once each scenario, when you would suffer damage, instead gain stun and invisible, and perform "[teleport] 2"
-  [17] = {x=0.16311138403004619, y=0.11, z=0.6305639512173298},
-  [18] = {x=0.16311138403004619, y=0.11, z=0.659239816324899},
+  --[] Replace one [-2] card with one [-1] stun card
+  [1] = {x=0.1631043321510841, y=0.11, z=-0.6450786112105524},
+  --[][] Replace one [-1] card with one [+0] wound card
+  [2] = {x=0.1631043321510841, y=0.11, z=-0.5221947028005727},
+  [3] = {x=0.2078025869665474, y=0.11, z=-0.5221947028005727},
+  --[][] Replace one [+0] with one [+1] "If you drew this as a part of a [icon2] ability [+3] instead" card
+  [4] = {x=0.1631043321510841, y=0.11, z=-0.3993110095280057},
+  [5] = {x=0.2078025869665474, y=0.11, z=-0.3993110095280057},
+  --[][] Replace one [+0] with one [+1] immobilize card
+  [6] = {x=0.1631043321510841, y=0.11, z=-0.22566994650823372},
+  [7] = {x=0.2078025869665474, y=0.11, z=-0.22566994650823372},
+  --[][] Add one [+1] disarm card
+  [8] = {x=0.1631043321510841, y=0.11, z=-0.10278625323566673},
+  [9] = {x=0.2078025869665474, y=0.11, z=-0.10278625323566673},
+  --[][] Add one [+2] fire card
+  [10] = {x=0.1631043321510841, y=0.11, z=-0.03189352763397038},
+  [11] = {x=0.2078025869665474, y=0.11, z=-0.03189352763397038},
+  --[][] Add one [+1] "All enemies adjacent to the target suffer [damage] 1." rolling card
+  [12] = {x=0.1631043321510841, y=0.11, z=0.03899930553643213},
+  [13] = {x=0.2078025869665474, y=0.11, z=0.03899930553643213},
+  --[] Ignore scenario effects and add one "safeguard self" rolling card
+  [14] = {x=0.1631043321510841, y=0.11, z=0.21264026098749797},
+  --[] Whenever you destroy a [icon] without applying a [icon2], perform: [heal] 1 [target] 1 ally
+  [15] = {x=0.1631043321510841, y=0.11, z=0.33429035633639925},
+  --[] Once each scenario, when you move a [icon2] from you active area to your discard pile, you may keep it in your active area instead.
+  [16] = {x=0.1631043321510841, y=0.11, z=0.5083279176075344},
+  --[|] Once each scenario, when you place or relocate a [icon] you may destroy it
+  [17] = {x=0.1631043321510841, y=0.11, z=0.7818312496557802},
+  [18] = {x=0.1631043321510841, y=0.11, z=0.8105071128642221},
 }
 
 levelPos = {
