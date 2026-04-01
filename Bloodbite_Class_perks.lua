@@ -10,22 +10,23 @@ perks = {
   },
   [3]={
     remove={"(+0)"},
-    add={"(+1) If you attach to the target with this attack, add (+2) instead"},
+    add={"(+0) invisible"},
   },
   [4]={
     remove={"(+0)"},
     add={"(+1) If you attach to the target with this attack, add (+2) instead"},
   },
   [5]={
-    remove={"(+1)"},
-    add={"(+1) ((retaliate) 1, (range) 3)"},
+    remove={"(+0)"},
+    add={"(+1) If you attach to the target with this attack, add (+2) instead"},
   },
   [6]={
     remove={"(+1)"},
     add={"(+1) ((retaliate) 1, (range) 3)"},
   },
   [7]={
-    add={"heal 1 target bloodbite","heal 1 target bloodbite"},
+    remove={"(+1)"},
+    add={"(+1) ((retaliate) 1, (range) 3)"},
   },
   [8]={
     add={"heal 1 target bloodbite","heal 1 target bloodbite"},
@@ -34,13 +35,13 @@ perks = {
     add={"heal 1 target bloodbite","heal 1 target bloodbite"},
   },
   [10]={
-    add={"(muddle, if the target is muddle, disarm instead) -rolling"},
+    add={"heal 1 target bloodbite","heal 1 target bloodbite"},
   },
   [11]={
     add={"(muddle, if the target is muddle, disarm instead) -rolling"},
   },
   [12]={
-    add={"(The target treats you as if you had invisible this round)"},
+    add={"(muddle, if the target is muddle, disarm instead) -rolling"},
   },
   [13]={
     ignore=ClassApi.PerkType.IgnoreScenario,
