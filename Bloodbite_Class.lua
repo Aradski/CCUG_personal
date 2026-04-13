@@ -8,31 +8,30 @@ perkPos = {
   --[][] Replace one [-1] card with one "[shield] 1" -rolling card
   [1] = {x=0.16235935039370078, y=0.11, z=-0.6448810632567271},
   [2] = {x=0.20528749999999998, y=0.11, z=-0.6448810632567271},
-  --[] Replace one [+0] card with one [+0] "invisible, self" card
-  [3] = {x=0.16235935039370078, y=0.11, z=-0.5181209253152768},
-  --[][] Replace one [+0] card with one [+1] "If you [icon] with this attack, add [+2] instead" card
-  [4] = {x=0.16235935039370078, y=0.11, z=-0.3913557530143227},
-  [5] = {x=0.20528749999999998, y=0.11, z=-0.3913557530143227},
-  --[][] Replace one [+1] card with one [+1] "[retaliate] 1, [range] 3" card
-  [6] = {x=0.16235935039370078, y=0.11, z=-0.21550054119364662},
-  [7] = {x=0.20528749999999998, y=0.11, z=-0.21550054119364662},
-  --[][][] Add two "[heal] 1, [target] [icon2]" -rolling cards
-  [8] = {x=0.16235935039370078, y=0.11, z=-0.08873536889269265},
-  [9] = {x=0.20528749999999998, y=0.11, z=-0.08873536889269265},
-  [10] = {x=0.2482156496062992, y=0.11, z=-0.08873536889269265},
-  --[][] Add one "muddle, if the target is muddle, disarm instead" -rolling card
-  [11] = {x=0.16235935039370078, y=0.11, z=0.03772270747854109},
-  [12] = {x=0.20528749999999998, y=0.11, z=0.03772270747854109},
-  --[] Ignore scenario effects, and you may start a scenario [icon] onto an ally
-  [13] = {x=0.16235935039370078, y=0.11, z=0.16448787977949506},
-  --[] Once each scenario, during your turn, replace one active [persistent] [loss] card with a different [persistent] [loss] card from your hand
-  [14] = {x=0.16235935039370078, y=0.11, z=0.33963828126966544},
-  --[|] You and your summons may [icon] onto the same figure, and your summons may [icon] onto you
-  [15] = {x=0.16235935039370078, y=0.11, z=0.5639894781886374},
-  [16] = {x=0.16235935039370078, y=0.11, z=0.5915344092909997},
-  --[|] Once each scenario, when you would suffer damage, instead gain stun and invisible, and perform "[teleport] 2"
-  [17] = {x=0.16235935039370078, y=0.11, z=0.7393412540589523},
-  [18] = {x=0.16235935039370078, y=0.11, z=0.7668861851613146},
+  --[][][] Replace one [+0] card with one [+1] "[heal] 1, self" card
+  [3] = {x=0.16235935039370078, y=0.11, z=-0.5082837868452186},
+  [4] = {x=0.20528749999999998, y=0.11, z=-0.5082837868452186},
+  [5] = {x=0.2482156496062992, y=0.11, z=-0.5082837868452186},
+  --[][] Replace one [+1] card with one [+1] "[retaliate] 1, [range] 3" -rolling card
+  [6] = {x=0.16235935039370078, y=0.11, z=-0.37168651043371004},
+  [7] = {x=0.20528749999999998, y=0.11, z=-0.37168651043371004},
+  --[][][] Add one "[heal] 2, [target] 1 ally, [icon2] may [icon] onto the target" -rolling cards
+  [8] = {x=0.16235935039370078, y=0.11, z=-0.23508923402220153},
+  [9] = {x=0.20528749999999998, y=0.11, z=-0.23508923402220153},
+  [10] = {x=0.2482156496062992, y=0.11, z=-0.23508923402220153},
+  --[][] Add one [+1] stun card
+  [11] = {x=0.16235935039370078, y=0.11, z=-0.04969894530168398},
+  [12] = {x=0.20528749999999998, y=0.11, z=-0.04969894530168398},
+  --[] Ignore scenario effects, and you may start a scenario [icon3] onto an ally
+  [13] = {x=0.16235935039370078, y=0.11, z=0.03779822287109533},
+  --[] You are immune to forced movement while [icon3], and whenever you would gain immobilize while [icon3], prevent the condition
+  [14] = {x=0.16235935039370078, y=0.11, z=0.22278576283132387},
+  --[|] At the start of the scenario, summon Chittering Mites and [icon] it onto an ally
+  [15] = {x=0.16235935039370078, y=0.11, z=0.4570697510509225},
+  [16] = {x=0.16235935039370078, y=0.11, z=0.48461468215328474},
+  --[|] Once each scenario, when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain invisible. They remain in play, and act on initiative 99 each round
+  [17] = {x=0.16235935039370078, y=0.11, z=0.642057291011151},
+  [18] = {x=0.16235935039370078, y=0.11, z=0.6696022221135133},
 }
 
 levelPos = {
