@@ -9,55 +9,58 @@ perks = {
     add={"shield 1 -rolling"},
   },
   [3]={
-    remove={"(+0)"},
-    add={"(+0) invisible"},
+    remove={"(-1)"},
+    add={"shield 1 -rolling"},
   },
   [4]={
     remove={"(+0)"},
-    add={"(+1) If you attach to the target with this attack, add (+2) instead"},
+    add={"(+1) heal 1 self"},
   },
   [5]={
     remove={"(+0)"},
-    add={"(+1) If you attach to the target with this attack, add (+2) instead"},
+    add={"(+1) heal 1 self"},
   },
   [6]={
-    remove={"(+1)"},
-    add={"(+1) ((retaliate) 1, (range) 3)"},
+    remove={"(+0)"},
+    add={"(+1) heal 1 self"},
   },
   [7]={
     remove={"(+1)"},
-    add={"(+1) ((retaliate) 1, (range) 3)"},
+    add={"(+1) ((retaliate) 1, (range) 3) rolling"},
   },
   [8]={
-    add={"heal 1 target bloodbite","heal 1 target bloodbite"},
+    remove={"(+1)"},
+    add={"(+1) ((retaliate) 1, (range) 3) rolling"},
   },
   [9]={
-    add={"heal 1 target bloodbite","heal 1 target bloodbite"},
+    add={"(+0) heal 2 ally attach rolling"},
   },
   [10]={
-    add={"heal 1 target bloodbite","heal 1 target bloodbite"},
+    add={"(+0) heal 2 ally attach rolling"},
   },
   [11]={
-    add={"(muddle, if the target is muddle, disarm instead) -rolling"},
+    add={"(+0) heal 2 ally attach rolling"},
   },
   [12]={
-    add={"(muddle, if the target is muddle, disarm instead) -rolling"},
+    add={"(+1) stun"},
   },
   [13]={
-    ignore=ClassApi.PerkType.IgnoreScenario,
+    add={"(+1) stun"},
   },
   [14]={
-    --Once each scenario, during your turn, replace one active (persistent) (loss) card with a different (persistent) (loss) card from your hand
-    unlock={"Adaptive Swarm"},
+    ignore=ClassApi.PerkType.IgnoreScenario,
   },
-  [15]={},
+  [15]={
+    --You are immune to forced movement while attached, and whenever you would gain immobilize while attached, prevent the condition
+    unlock={"Tight Hug"},
+  },
   [16]={
-    --You and your summons may attach onto the same figure, and your summons may attach onto you
-    unlock={"All is One"},
+    --At the start of the scenario, summon Chittering Mites and attach it onto an ally
+    unlock={"Warm Embrace"},
   },
   [17]={},
   [18]={
-    --Once each scenario, when you would suffer damage, instead gain stun and invisible, and perform ((teleport) 2)
-    unlock={"Frantic Dispersal"},
+    --Once each scenario, when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain invisible. They remain in play, and act on initiative 99 each round
+    unlock={"Long Goodbye"},
   },
 },
