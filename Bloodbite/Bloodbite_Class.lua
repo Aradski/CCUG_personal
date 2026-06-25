@@ -5,33 +5,34 @@ masteryPos = {
   [2] = {x=-0.6800718503937008, y=0.11, z=0.817565132026078},
 }
 perkPos = {
-  --[][][] Replace one [-1] card with one "[shield] 1" -rolling card
+  --[][] Replace one [-1] card with one "[shield] 1" -rolling card
   [1] = {x=0.16235935039370078, y=0.11, z=-0.6448810632567271},
   [2] = {x=0.20528749999999998, y=0.11, z=-0.6448810632567271},
-  [3] = {x=0.2482156496062992, y=0.11, z=-0.6448810632567271},
-  --[][][] Replace one [+0] card with one [+1] "[heal] 1, self" card
-  [4] = {x=0.16235935039370078, y=0.11, z=-0.5082837868452186},
-  [5] = {x=0.20528749999999998, y=0.11, z=-0.5082837868452186},
-  [6] = {x=0.2482156496062992, y=0.11, z=-0.5082837868452186},
+  --[][][] Replace one [+0] card with one [+1] "Add this card in your active area. During your turn, discard this card to perform [icon] [range] 2" card
+  [3] = {x=0.16235935039370078, y=0.11, z=-0.5288843859339996},
+  [4] = {x=0.20528749999999998, y=0.11, z=-0.5288843859339996},
+  [5] = {x=0.2482156496062992, y=0.11, z=-0.5288843859339996},
   --[][] Replace one [+1] card with one [+1] "[retaliate] 1, [range] 3" -rolling card
-  [7] = {x=0.16235935039370078, y=0.11, z=-0.37168651043371004},
-  [8] = {x=0.20528749999999998, y=0.11, z=-0.37168651043371004},
-  --[][][] Add one "[heal] 2, [target] 1 ally, [icon2] may [icon] onto the target" -rolling cards
-  [9] = {x=0.16235935039370078, y=0.11, z=-0.23508923402220153},
-  [10] = {x=0.20528749999999998, y=0.11, z=-0.23508923402220153},
-  [11] = {x=0.2482156496062992, y=0.11, z=-0.23508923402220153},
+  [6] = {x=0.16235935039370078, y=0.11, z=-0.26620661011402824},
+  [7] = {x=0.20528749999999998, y=0.11, z=-0.26620661011402824},
+  --[][] Add one "[heal] 2, [target] 1 ally, [icon2] may [icon] onto the target" -rolling cards
+  [8] = {x=0.16235935039370078, y=0.11, z=-0.150204898431797},
+  [9] = {x=0.20528749999999998, y=0.11, z=-0.150204898431797},
+  --[][][] Add two "[heal] 1, [target] [icon4]" -rolling cards
+  [10] = {x=0.16235935039370078, y=0.11, z=-0.03420822110906943},
+  [11] = {x=0.20528749999999998, y=0.11, z=-0.03420822110906943},
+  [12] = {x=0.2482156496062992, y=0.11, z=-0.03420822110906943},
   --[][] Add one [+1] stun card
-  [12] = {x=0.16235935039370078, y=0.11, z=-0.04969894530168398},
-  [13] = {x=0.20528749999999998, y=0.11, z=-0.04969894530168398},
+  [13] = {x=0.16235935039370078, y=0.11, z=0.0814863946434414},
+  [14] = {x=0.20528749999999998, y=0.11, z=0.0814863946434414},
   --[] Ignore scenario effects, and you may start a scenario [icon3] onto an ally
-  [14] = {x=0.16235935039370078, y=0.11, z=0.03779822287109533},
+  [15] = {x=0.16235935039370078, y=0.11, z=0.14838799808694333},
   --[] You are immune to forced movement while [icon3], and whenever you would gain immobilize while [icon3], prevent the condition
-  [15] = {x=0.16235935039370078, y=0.11, z=0.22278576283132387},
-  --[] At the start of the scenario, summon Chittering Mites and [icon] it onto an ally
-  [16] = {x=0.16235935039370078, y=0.11, z=0.4570697510509225},
-  --[|] Once each scenario when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain invisible. They remain in play, and act on initiative 99 each round
-  [17] = {x=0.16235935039370078, y=0.11, z=0.642057291011151},
-  [18] = {x=0.16235935039370078, y=0.11, z=0.6696022221135133},
+  [16] = {x=0.16235935039370078, y=0.11, z=0.31277997331789464},
+  --[] Whenever you open a door, you may [icon] onto the nearest enemy
+  [17] = {x=0.16235935039370078, y=0.11, z=0.5264633624487125},
+  --[] Once each scenario when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain invisible. They remain in play, acting on initiative 99 each round
+  [18] = {x=0.16235935039370078, y=0.11, z=0.642057291011151},
 }
 
 levelPos = {
