@@ -49,40 +49,40 @@ __bundle_register("__root", function(require, _LOADED, __bundle_register, __bund
 
   local masteryPositions = {
     --[] [attach] to a different figure each turn, except during a long rest
-    { -338.7639474708, -337.1985286522 },
+    { -338.7639474708, -335.8266399741 },
     --[] Prevent your character allies from suffering attack damage in a single scenario.
-    { -338.7639474708, -401.9172687606 },
+    { -338.7639474708, -403.2922704457 },
   }
 
   local sheet = CharacterSheet.create({
     perkPositions = {
       --[][][] Replace one [amd-minus-1] card with one “[shield]1”[rolling] card
-      { 81.4891805891, 320.9389553999 },
-      { 100.7110669607, 320.9389406018 },
-      { 119.9329385342, 320.9389406018 },
+      { 81.4891805891, 321.5264678091 },
+      { 100.7110669607, 321.5264530109 },
+      { 119.9329385342, 321.5264530109 },
       --[][][] Replace one [amd-plus-0] card with one [amd-plus-1] “[safeguard], self” card.
-      { 81.4891805891, 257.3889464217 },
-      { 100.7110669607, 257.3889316235 },
-      { 119.9329385342, 257.3889316235 },
+      { 81.4891805891, 259.1514498121 },
+      { 100.7110669607, 259.1514350139 },
+      { 119.9329385342, 259.1514350139 },
       --[][] Add one “[heal]2, [target]1 ally, [bloodbite] may [attach] onto the target”[rolling] card
-      { 81.4891805891, 194.4577152713 },
-      { 100.7110669607, 194.4577004731 },
+      { 81.4891805891, 197.395209643 },
+      { 100.7110669607, 197.3951948449 },
       --[][][] Add two “[heal]1, [target][bloodbite]”[rolling] cards
-      { 81.4891805891, 129.7702067447 },
-      { 100.7110669607, 129.7701919465 },
-      { 119.9329385342, 129.7701919465 },
+      { 81.4891805891, 130.863955009 },
+      { 100.7110669607, 130.8639402108 },
+      { 119.9329385342, 130.8639402108 },
       --[][] Add one [amd-plus-1][stun] card
-      { 81.4891805891, 66.2202654405 },
-      { 100.7110669607, 66.2202506423 },
+      { 81.4891805891, 68.488970849 },
+      { 100.7110669607, 68.4889560509 },
       --[] Ignore scenario effects, and you may start a scenario [attached] onto an ally.
-      { 81.4891805891, 27.3170838426 },
+      { 81.4891805891, 30.7608140695 },
       --[] You are immune to forced movement while [attached], and whenever you would gain [immobilize] while [attached], prevent the condition
-      { 81.4891805891, -59.7453998118 },
+      { 81.4891805891, -56.2609974709 },
       --[] Once each scenario when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain [invisible]. They remain in play, acting on initiative 99 each round
-      { 81.4891805891, -172.5923119062 },
+      { 81.4891805891, -170.1985448225 },
       --[|] Once each scenario, when a new room is revealed, you may [attach] onto the nearest newly revealed enemy and gain [shield]2 for the round
-      { 81.4948262749, -334.732298433 },
-      { 81.4948262749, -347.6155167091 },
+      { 81.4948262749, -331.163574205 },
+      { 81.4948262749, -344.0467924811 },
     },
   })
 
