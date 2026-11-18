@@ -48,41 +48,44 @@ __bundle_register("__root", function(require, _LOADED, __bundle_register, __bund
   local Ui = require("lib.Ui")
 
   local masteryPositions = {
-    --[] [attach] to a different figure each turn, except during a long rest
-    { -338.7639474708, -335.8266399741 },
-    --[] Prevent your character allies from suffering attack damage in a single scenario.
-    { -338.7639474708, -403.2922704457 },
+    --[] [attach] to a different figure each turn
+    { -338.7639408776, -348.2891620891 },
+    --[] Something Something
+    { -338.7639408776, -413.0079016823 },
   }
 
   local sheet = CharacterSheet.create({
     perkPositions = {
-      --[][][] Replace one [amd-minus-1] card with one “[shield]1”[rolling] card
-      { 81.4891805891, 321.5264678091 },
-      { 100.7110669607, 321.5264530109 },
-      { 119.9329385342, 321.5264530109 },
-      --[][][] Replace one [amd-plus-0] card with one [amd-plus-1] “[safeguard], self” card.
-      { 81.4891805891, 259.1514498121 },
-      { 100.7110669607, 259.1514350139 },
-      { 119.9329385342, 259.1514350139 },
-      --[][] Add one “[heal]2, [target]1 ally, [bloodbite] may [attach] onto the target”[rolling] card
-      { 81.4891805891, 197.395209643 },
-      { 100.7110669607, 197.3951948449 },
-      --[][][] Add two “[heal]1, [target][bloodbite]”[rolling] cards
-      { 81.4891805891, 130.863955009 },
-      { 100.7110669607, 130.8639402108 },
-      { 119.9329385342, 130.8639402108 },
-      --[][] Add one [amd-plus-1][stun] card
-      { 81.4891805891, 68.488970849 },
-      { 100.7110669607, 68.4889560509 },
+      --[] Replace one [amd-minus-2] card with one [amd-plus-0] card.
+      { 81.4891704811, 325.779582588 },
+      --[] Remove two [amd-minus-1] cards
+      { 81.4891704811, 273.0483437048 },
+      --[][] Replace one [amd-minus-1] card with one “[shield]1”[rolling] card
+      { 81.4891704811, 244.960863319 },
+      { 100.7110732485, 244.960863319 },
+      --[][] Replace two [amd-plus-0] cards with two [amd-plus-1] card
+      { 81.4891704811, 191.0952152214 },
+      { 100.7110732485, 191.0952152214 },
+      --[] Replace two [amd-plus-1] cards with two [amd-plus-2] cards
+      { 81.4891704811, 138.3639763382 },
+      --[][] Add one [amd-plus-0] “[bloodbite] performs: [attach] [range]3, grant the ally you are [attached] onto: [attack]2” card
+      { 81.4891704811, 85.632737455 },
+      { 100.7110732485, 85.632737455 },
+      --[] Add one [amd-plus-2] “[safeguard]self or [ward]self”card
+      { 81.4891704811, 4.8514706102 },
+      --[][] Add two “[heal]1, self”[rolling] cards
+      { 81.4891704811, -49.5297661901 },
+      { 100.7110732485, -49.5297661901 },
       --[] Ignore scenario effects, and you may start a scenario [attached] onto an ally.
-      { 81.4891805891, 30.7608140695 },
+      { 81.4891704811, -78.7485505977 },
       --[] You are immune to forced movement while [attached], and whenever you would gain [immobilize] while [attached], prevent the condition
-      { 81.4891805891, -56.2609974709 },
-      --[] Once each scenario when you exhaust, summon Inconspicuous Moths in the hex you occupied, and they gain [invisible]. They remain in play, acting on initiative 99 each round
-      { 81.4891805891, -170.1985448225 },
+      { 81.4891704811, -157.0954098693 },
+      --[|] Whenever you grant an attack, you may draw an attack modifier card and add it to the attack.
+      { 81.4948161624, -262.1978810535 },
+      { 81.4948161624, -275.0810890115 },
       --[|] Once each scenario, when a new room is revealed, you may [attach] onto the nearest newly revealed enemy and gain [shield]2 for the round
-      { 81.4948262749, -331.163574205 },
-      { 81.4948262749, -344.0467924811 },
+      { 81.4948161624, -339.5760469979 },
+      { 81.4948161624, -352.4592549559 },
     },
   })
 
@@ -4461,6 +4464,8 @@ __bundle_register("Game.Engine.Component.BaseCharacterSheet",
       local ui = {
         ---@type UI_Checkmark[]
         levelCheckmarks = {},
+        ---@type UI_Checkmark[]
+        perkCheckmarks = {},
         ---@type UI_Counter
         xpCounter = nil,
         ---@type UI_Counter
@@ -4703,6 +4708,7 @@ __bundle_register("Game.Engine.Component.BaseCharacterSheet",
                 value = self.data.checkmarks >= index,
                 onValueChange = self.changeState(this.onChangeCheckMark),
               })
+              ui.perkCheckmarks[index] = perkCheckMark
               basePanel.addChild(perkCheckMark.element)
 
               index = index + 1
@@ -4712,9 +4718,15 @@ __bundle_register("Game.Engine.Component.BaseCharacterSheet",
       end
 
       ---@type UI_Checkmark_Handler
-      this.onChangeCheckMark = function(_, value)
-        local diff = value and 1 or -1
-        self.data.checkmarks = self.data.checkmarks + diff
+      this.onChangeCheckMark = function(_, value, element)
+        local clicked = Ui.getIndex(element.id, "perkCheckmark_(%d+)")
+        local newCount = value and clicked or clicked - 1
+
+        for index, checkmark in ipairs(ui.perkCheckmarks) do
+          checkmark.setChecked(index <= newCount)
+        end
+
+        self.data.checkmarks = newCount
       end
 
       ---@param root seb_XmlUi_Panel
