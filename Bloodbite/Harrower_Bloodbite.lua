@@ -48,7 +48,7 @@ __bundle_register("__root", function(require, _LOADED, __bundle_register, __bund
   local Ui = require("lib.Ui")
 
   local masteryPositions = {
-    --[] [attach] to a different figure each turn
+    --[] [attach] onto a different figure each turn
     { -338.7639408776, -348.2891620891 },
     --[] Something Something
     { -338.7639408776, -413.0079016823 },
@@ -56,36 +56,35 @@ __bundle_register("__root", function(require, _LOADED, __bundle_register, __bund
 
   local sheet = CharacterSheet.create({
     perkPositions = {
-      --[] Replace one [amd-minus-2] card with one [amd-plus-0] card.
-      { 81.4891704811, 325.779582588 },
-      --[] Remove two [amd-minus-1] cards
-      { 81.4891704811, 273.0483437048 },
-      --[][] Replace one [amd-minus-1] card with one “[shield]1”[rolling] card
-      { 81.4891704811, 244.960863319 },
-      { 100.7110732485, 244.960863319 },
-      --[][] Replace two [amd-plus-0] cards with two [amd-plus-1] card
-      { 81.4891704811, 191.0952152214 },
-      { 100.7110732485, 191.0952152214 },
-      --[] Replace two [amd-plus-1] cards with two [amd-plus-2] cards
-      { 81.4891704811, 138.3639763382 },
-      --[][] Add one [amd-plus-0] “[bloodbite] performs: [attach] [range]3, grant the ally you are [attached] onto: [attack]2” card
-      { 81.4891704811, 85.632737455 },
-      { 100.7110732485, 85.632737455 },
-      --[] Add one [amd-plus-2] “[safeguard]self or [ward]self”card
-      { 81.4891704811, 4.8514706102 },
-      --[][] Add two “[heal]1, self”[rolling] cards
-      { 81.4891704811, -49.5297661901 },
-      { 100.7110732485, -49.5297661901 },
-      --[] Ignore scenario effects, and you may start a scenario [attached] onto an ally.
-      { 81.4891704811, -78.7485505977 },
+      --[][][] Replace one [amd-minus-1] card with one “[bloodbite] gains [shield]1”[rolling] card
+      { 81.4891704811, 321.0389675332 },
+      { 100.7110732485, 321.0389675332 },
+      { 119.9329403591, 321.0389398186 },
+      --[][] Replace one [amd-minus-1] card with one [amd-plus-0][poison] card
+      { 81.4891704811, 257.6889841334 },
+      { 100.7110732485, 257.6889841334 },
+      --[][] Replace one [amd-plus-0] card with one [amd-plus-1] “Add +2[attack] if [bloodbite] is [attached] onto the target” card
+      { 81.4891704811, 194.338969048 },
+      { 100.7110732485, 194.338969048 },
+      --[] Add one [amd-plus-2]“[safeguard] self or [ward] self” card
+      { 81.4891704811, 106.3420902727 },
+      --[][][] Add one [amd-plus-2]“[heal]1, [target]2, [range]1” card
+      { 81.4891704811, 42.992106873 },
+      { 100.7110732485, 42.992106873 },
+      { 119.9329403591, 42.9920791584 },
+      --[] Ignore scenario effects and add one [amd-plus-1] card
+      { 81.4891704811, -20.3579398981 },
+      --[] Ignore item [item-minus-1] effects and add one [amd-plus-1] card
+      { 81.4891704811, -82.5704088909 },
       --[] You are immune to forced movement while [attached], and whenever you would gain [immobilize] while [attached], prevent the condition
-      { 81.4891704811, -157.0954098693 },
-      --[|] Whenever you grant an attack, you may draw an attack modifier card and add it to the attack.
-      { 81.4948161624, -262.1978810535 },
-      { 81.4948161624, -275.0810890115 },
-      --[|] Once each scenario, when a new room is revealed, you may [attach] onto the nearest newly revealed enemy and gain [shield]2 for the round
-      { 81.4948161624, -339.5760469979 },
-      { 81.4948161624, -352.4592549559 },
+      { 81.4891704811, -144.7860464476 },
+      --[] Whenever an ally opens a door, you may [attach] onto that ally
+      { 81.4891704811, -259.6922385282 },
+      --[] At the start of the scenario, perform: “[ward][range]3, [attach]”
+      { 81.4891704811, -321.9078760849 },
+      --[|] Whenever you grant an attack, you may draw an attack modifier card and add it to the attack
+      { 81.4948161624, -385.2603999733 },
+      { 81.4948161624, -398.1436079314 },
     },
   })
 

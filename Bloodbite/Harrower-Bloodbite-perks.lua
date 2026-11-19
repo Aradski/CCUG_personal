@@ -1,25 +1,25 @@
 -- Perk List
 perks = {
-  [1]={remove={"(-2)"}, add={"(+0)"}},
-  [2]={remove={"(-1)","(-1)"}},
-  [3]={remove={"(-1)"}, add={"(+0) ((shield) 1) rolling"}},
-  [4]={remove={"(-1)"}, add={"(+0) ((shield) 1) rolling"}},
-  [5]={remove={"(+0)","(+0)"}, add={"(+1)","(+1)"}},
-  [6]={remove={"(+0)","(+0)"}, add={"(+1)","(+1)"}},
-  [7]={remove={"(+1)","(+1)"}, add={"(+2)","(+2)"}},
-  [8]={add={"(+0) ((bloodbite) attaches and grants attack)"}},
-  [9]={add={"(+0) ((bloodbite) attaches and grants attack)"}},
-  [10]={add={"(+2) ((safeguard) self or (ward) self)"}},
-  [11]={add={"(+0) ((heal) 1 self) rolling","(+0) ((heal) 1 self) rolling"}},
-  [12]={add={"(+0) ((heal) 1 self) rolling","(+0) ((heal) 1 self) rolling"}},
-  --You may start the scenario attached onto an ally
-  [13]={ignore=ClassApi.PerkType.IgnoreScenario,unlock={"Best Pals"}},
-  --You are immune to forced movement while (attached), and whenever you would gain (immobilize) while (attached), prevent the condition
-  [14]={unlock="Tight Hug"},
-  [15]={},
-  --Whenever you grant an attack, you may draw an attack modifier card and add it to the attack.
-  [16]={unlock="Guiding Hand"},
+  [1]={remove={"(-1)"}, add={"(+0) ((bloodbite) gains (shield) 1) rolling"}},
+  [2]={remove={"(-1)"}, add={"(+0) ((bloodbite) gains (shield) 1) rolling"}},
+  [3]={remove={"(-1)"}, add={"(+0) ((bloodbite) gains (shield) 1) rolling"}},
+  [4]={remove={"(-1)"}, add={"(+0) (poison)"}},
+  [5]={remove={"(-1)"}, add={"(+0) (poison)"}},
+  [6]={remove={"(+0)"}, add={"(+1) (Add +2 (attack) if (bloodbite) is (attached) onto the target)"}},
+  [7]={remove={"(+0)"}, add={"(+1) (Add +2 (attack) if (bloodbite) is (attached) onto the target)"}},
+  [8]={add={"(+2) ((safeguard) self or (ward) self)"}},
+  [9]={add={"(+2) ((heal) 1 (target) 2, (range) 1)"}},
+  [10]={add={"(+2) ((heal) 1 (target) 2, (range) 1)"}},
+  [11]={add={"(+2) ((heal) 1 (target) 2, (range) 1)"}},
+  [12]={ignore=ClassApi.PerkType.IgnoreScenario, add={"(+1)"}},
+  [13]={ignore=ClassApi.PerkType.IgnoreItem, add={"(+1)"}},
+  --You are immune to forced movement while (attached), and whenever you would gain (immobilize) while (attached), prevent the condition.
+  [14]={unlock="Never Going to Give You Up"},
+  --Whenever an ally opens a door, you may (attach) onto that ally.
+  [15]={unlock="In Good Company"},
+  --At the start of the scenario, perform: ((ward)(range)3, (attach)).
+  [16]={unlock="Instant Connection"},
   [17]={},
-  --Once each scenario, when a new room is revealed, you may (attach) onto the nearest newly revealed enemy and gain (shield)2 for the round
-  [18]={unlock="Warm Embrace"},
+  --Whenever you grant an attack, you may draw an attack modifier card and add it to the attack.
+  [18]={unlock="Happy Helpers"},
 },
