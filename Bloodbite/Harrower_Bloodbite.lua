@@ -49,42 +49,43 @@ __bundle_register("__root", function(require, _LOADED, __bundle_register, __bund
 
   local masteryPositions = {
     --[] [attach] onto a different figure each turn
-    { -338.7639408776, -348.2891620891 },
+    { -338.7639408776, -353.8735023145 },
     --[] Something Something
-    { -338.7639408776, -413.0079016823 },
+    { -338.7639408776, -430.3141535996 },
   }
 
   local sheet = CharacterSheet.create({
     perkPositions = {
-      --[][][] Replace one [amd-minus-1] card with one “[bloodbite] gains [shield]1”[rolling] card
-      { 81.4891704811, 321.0389675332 },
-      { 100.7110732485, 321.0389675332 },
-      { 119.9329403591, 321.0389398186 },
+      --[][] Replace one [amd-minus-1] card with one “[bloodbite] gains [shield]1”[rolling] card
+      { 81.4891704811, 325.2046149995 },
+      { 100.7110732485, 325.2046149995 },
       --[][] Replace one [amd-minus-1] card with one [amd-plus-0][poison] card
-      { 81.4891704811, 257.6889841334 },
-      { 100.7110732485, 257.6889841334 },
+      { 81.4891704811, 272.5577232849 },
+      { 100.7110732485, 272.5577232849 },
       --[][] Replace one [amd-plus-0] card with one [amd-plus-1] “Add +2[attack] if [bloodbite] is [attached] onto the target” card
-      { 81.4891704811, 194.338969048 },
-      { 100.7110732485, 194.338969048 },
-      --[] Add one [amd-plus-2]“[safeguard] self or [ward] self” card
-      { 81.4891704811, 106.3420902727 },
-      --[][][] Add one [amd-plus-2]“[heal]1, [target]2, [range]1” card
-      { 81.4891704811, 42.992106873 },
-      { 100.7110732485, 42.992106873 },
-      { 119.9329403591, 42.9920791584 },
-      --[] Ignore scenario effects and add one [amd-plus-1] card
-      { 81.4891704811, -20.3579398981 },
-      --[] Ignore item [item-minus-1] effects and add one [amd-plus-1] card
-      { 81.4891704811, -82.5704088909 },
+      { 81.4891704811, 219.9139684484 },
+      { 100.7110732485, 219.9139684484 },
+      --[][] Add one [amd-plus-1][stun] card
+      { 81.4891704811, 146.3202400587 },
+      { 100.7110732485, 146.3202400587 },
+      --[] Add one [amd-plus-2]“[safeguard], self or [ward], self” card
+      { 81.4891704811, 114.6233535829 },
+      --[][][] Add one “[heal]1, [target]2, [range]1” [rolling] card
+      { 81.4891704811, 61.9764301826 },
+      { 100.7110732485, 61.9764301826 },
+      { 119.9329403591, 61.976402468 },
+      --[] Ignore scenario effects and add one “[bloodbite] performs: [attach][range]3” [rolling] card
+      { 81.4891704811, 9.3327704031 },
+      --[] Ignore item [item-minus-1] effects and add one “[bloodbite] performs: [attach][range]3”[rolling] card
+      { 81.4891704811, -64.2609896723 },
       --[] You are immune to forced movement while [attached], and whenever you would gain [immobilize] while [attached], prevent the condition
-      { 81.4891704811, -144.7860464476 },
+      { 81.4891704811, -137.8516445551 },
       --[] Whenever an ally opens a door, you may [attach] onto that ally
-      { 81.4891704811, -259.6922385282 },
+      { 81.4891704811, -232.3922729911 },
       --[] At the start of the scenario, perform: “[ward][range]3, [attach]”
-      { 81.4891704811, -321.9078760849 },
-      --[|] Whenever you grant an attack, you may draw an attack modifier card and add it to the attack
-      { 81.4948161624, -385.2603999733 },
-      { 81.4948161624, -398.1436079314 },
+      { 81.4891704811, -285.035996142 },
+      --[] Whenever you grant an attack, you may draw an attack modifier card as if you were making the attack. The ally may add your modifier instead of their own, or both if they have [strengthen]
+      { 81.4891704811, -337.6828878566 },
     },
   })
 
@@ -977,7 +978,7 @@ __bundle_register("lib.xmlui.XmlUiElement", function(require, _LOADED, __bundle_
   ---@field id nil | string @A unique string used to identify the element from Lua scripting.
   ---@field active nil | boolean @Specifies whether or not this element and its children are visible and contribute to layout. Modifying this via script will not trigger animations.
   ---@field rectAlignment nil | tts__UIElement_Alignment @The element's anchor and pivot point, relative to its parent element.
-  ---@field width nil | number @ 	The width of this element in pixels or as a percentage of the width of its parent.
+  ---@field width nil | number @  The width of this element in pixels or as a percentage of the width of its parent.
   ---@field height nil | number @The height of this element in pixels or as a percentage of the height of its parent.
   ---@field position nil | seb_Vector3
   ---@field rotation nil | seb_Vector3
